@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: hsl(229, 57%, 11%);
+    background-image:  url(./images/bg-desktop.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100% 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+main{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+.firstcontainer{
+    background-color: hsl(228, 56%, 26%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    width: 23%;
+    height: 180px;
+    border-radius: 10px 90px 10px 10px;
+}
+.img{
+    width: 120px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+.images{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-left: 20px;
+}
+.img1{
+    background-color: hsl(229, 57%, 11%);
+    border-radius: 5px;
+    padding: 9px 9px;
+    width: 18px;
+    height: 20px;
+    margin-bottom: 30px;
+}
+.img2{
+    background-color: hsl(229, 57%, 11%);
+    border-radius: 5px;
+    padding: 10px;
+    width: 18px;
+    height: 18px;
+    margin-bottom: 30px;
+    margin-left: 15px;
+}
+.img3{
+    background-color: hsl(229, 57%, 11%);
+    border-radius: 5px;
+    padding: 10px;
+    width: 20px;
+    height: 18px;
+    margin-bottom: 30px;
+    margin-left: 15px;
+}
+.secondcontainer{
+    background-color: hsl(228, 56%, 26%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 40%;
+    height: 140px;
+    margin-left: 30px;
+    border-radius: 10px;
+}
+p{
+    display: flex;
+    width: 50%;
+    height: auto;
+    color: hsl(229, 7%, 55%);
+    margin: 10px 0 0 20px;
+    font-size: 15px;
+    font-weight: 500;
+}
+span{
+    color: hsl(243, 100%, 93%);
+    font-weight: 700;
+    margin: 0 5px;
+}
+.nav{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+.tooltip{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 0;
+    top: -120px;
+    padding: 15px 25px;
+    border-radius: 6px;
+    background-color: #fff;
+    color: #000;
+    transform: translateY(30px);
+    transform: translateX(-35px);
+}
+.tooltip::after{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -20px;
+    transform: translateX(0%);
+    border-width: 40px;
+    border-style: solid;
+    border-color: transparent rgb(255, 255, 255) transparent transparent;
+
+}
+strong{
+    font-size: 45px;
+    font-weight: 700;
+    margin-right: 5px;
+    font-style: normal;
+}
+.alt1{
+    color: hsl(229, 7%, 55%);
+    font-weight: 600;
+    font-size: 12px;
+    font-style: normal;
+}
+.below{
+    background-color: hsla(229, 57%, 11%, 0.5);
+    width: 90%;
+    height: 12px;
+    margin: 10px 0 0 20px;
+    border: 2px solid hsl(229, 57%, 11% 0.95);
+    border-radius: 10px;
+}
+.bar{
+    background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    position: absolute;
+    width: 0%;
+    height: 12px;
+    animation: bar 12s linear forwards;
+    border-radius: 10px;
+}
+.bar::after{
+    content: "";
+    position: absolute;
+    right: 0;
+    transform: translateY(0);
+    transform: translateX(0);
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    border-radius: 100%;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.479);
+}
+@keyframes bar{
+    100%{
+        width: 28%;
+    }
+}
+.stats{
+    width: 90%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+.alt{
+    font-size: 13px;
+    color: white;
+    font-weight: 600;
+    font-style: normal;
+}
