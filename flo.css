@@ -236,7 +236,7 @@ strong{
     }
     p{
         display: flex;
-        width: 100%;
+        width: 70%;
         height: auto;
         color: hsl(229, 7%, 55%);
         margin: 10px 0 0 20px;
