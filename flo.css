@@ -188,12 +188,12 @@ strong{
     font-weight: 600;
     font-style: normal;
 }
-@media (max-width: 650px) {
+@media (max-width: 992px) {
     body{
         background-image: url(./images/bg-mobile.png);
         background-repeat: no-repeat;
         background-position: bottom;
-        background-size: 100% 100%;
+        background-size: 110% 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -257,5 +257,30 @@ strong{
     border-width: 40px;
     border-style: solid;
     border-color: transparent transparent transparent transparent;
-}
+    }
+    .bar{
+        background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+        position: absolute;
+        width: 0%;
+        height: 12px;
+        animation: bar 6s linear forwards;
+        border-radius: 10px;
+    }
+    .bar::after{
+        content: "";
+        position: absolute;
+        right: 0;
+        transform: translateY(50px);
+        transform: translateX(0);
+        width: 10px;
+        height: 10px;
+        background: #fff;
+        border-radius: 100%;
+        box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.479);
+    }
+    @keyframes bar{
+        100%{
+            width: 28%;
+        }
+    }
 }
