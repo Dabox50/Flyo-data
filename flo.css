@@ -188,7 +188,7 @@ strong{
     font-weight: 600;
     font-style: normal;
 }
-@media (max-width: 992px) and (max-width: 375px) {
+@media (max-width: 992px){
     body{
         background-image: url(./images/bg-mobile.png);
         background-repeat: no-repeat;
@@ -236,7 +236,7 @@ strong{
     }
     p{
         display: flex;
-        width: 70%;
+        width: 100%;
         height: auto;
         color: hsl(229, 7%, 55%);
         margin: 10px 0 0 20px;
